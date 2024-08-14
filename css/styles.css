@@ -1,0 +1,50 @@
+
+.greeting {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.credit-balance {
+    font-size: 1.25rem;
+    color: #28a745;
+}
+
+.offers {
+    margin-top: 30px;
+}
+
+.offer-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offer-card .btn{
+    border-radius: 30px;
+    padding: 5px 20px;
+    color: #FFA500; 
+    border: 2px solid #FFA500;
+    background: transparent;
+    transition: .3s;
+}
+
+.offer-card .btn:hover{
+    background-color: #FFA500;
+    color: #fff;
+}
+
+h5 span{
+    background-color: #FFA500;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0;
+}
+footer{
+    font-size: 12px;
+}

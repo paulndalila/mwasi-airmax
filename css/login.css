@@ -1,0 +1,54 @@
+body {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: #fff; */
+    background: linear-gradient(90deg, #f4a261, #ffc52d);
+}
+
+.login-container {
+    width: 450px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f4a261;
+    /* background: linear-gradient(90deg, #f4a261, #ffc52d); */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-container .banner{
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+    display: flex;
+    align-items: baseline;
+    overflow: hidden;
+}
+
+.login-container .banner div{
+    height: 100%;
+    /* width: 40%; */
+}
+.login-container .banner div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.login-container .banner p{
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container footer{
+    font-size: 12px;
+}
+
+#successMessage{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

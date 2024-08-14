@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwasi Airmax Internet</title>
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/179a6fd48d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="title_mwasi">Welcome to Mwasi Airmax Internet!</h1>
+    <i class="fa-solid fa-wifi wifi_icon"></i>
+
+    <div class="loading-container">
+        <h3>Just a moment...</h3>
+        <div class="spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+        <div class="progress mt-3">
+            <div class="progress-bar" role="progressbar"></div>
+        </div>
+        <p class="muted_text">Hang on as we direct you to the wifi portal...</p>
+
+        <footer class="mt-4"> &copy; Mwasi Airmax Internet Ltd. All rights reserved.</footer>
+    </div>
+
+    <script>
+        // Simulate loading time
+        setTimeout(function () {
+            // Redirect to the wifi portal
+           window.location.href = 'wifi-portal.html';
+        }, 5000);
+
+        // Animate progress bar
+        function animateProgressBar() {
+            let progressBar = document.querySelector('.progress-bar');
+            let width = 0;
+            let interval = setInterval(function() {
+                if (width >= 100) {
+                    clearInterval(interval);
+                } else {
+                    width++;
+                    progressBar.style.width = width + '%';
+                }
+            }, 50); // Increase width by 1% every 50ms
+        }
+
+        animateProgressBar();
+    </script>  
+</body>
+</html>
